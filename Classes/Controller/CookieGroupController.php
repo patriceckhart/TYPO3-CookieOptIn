@@ -25,7 +25,6 @@ class CookieGroupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
      */
     protected $cookieGroupRepository = null;
 
-
     /**
      * action list
      *
@@ -98,16 +97,17 @@ class CookieGroupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
             }
         }
 
+        $essentials = 0;
+        foreach ($cookieGroups as $cookieGroup) {
+            $essential = $cookieGroup->getEssential();
+            if($essential==true) {
+                $essentials = intval($essentials)+1;
+            }
+        }
+        // \TYPO3\CMS\Core\Utility\DebugUtility::debug($essentials);
+        $this->view->assign('essentials', $essentials);
+
+
     }
 
-    /**
-     * action show
-     *
-     * @param \SteinbauerIT\Cookieoptin\Domain\Model\CookieGroup $cookieGroup
-     * @return void
-     */
-    public function showAction(\SteinbauerIT\Cookieoptin\Domain\Model\CookieGroup $cookieGroup)
-    {
-        $this->view->assign('cookieGroup', $cookieGroup);
-    }
 }

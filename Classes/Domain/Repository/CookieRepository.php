@@ -13,9 +13,9 @@ namespace SteinbauerIT\Cookieoptin\Domain\Repository;
  ***/
 
 /**
- * The repository for CookieGroups
+ * The repository for Cookie
  */
-class CookieGroupRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class CookieRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
     /**
      * @var array
@@ -23,5 +23,5 @@ class CookieGroupRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
     protected $defaultOrderings = [
         'sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
     ];
-
+    
 }

@@ -6,6 +6,7 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
+        'sortby' => 'sorting',
         'versioningWS' => true,
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -145,6 +146,7 @@ return [
                 'type' => 'inline',
                 'foreign_table' => 'tx_cookieoptin_domain_model_cookie',
                 'foreign_field' => 'cookiegroup',
+                'foreign_sortby' => 'sorting',
                 'maxitems' => 9999,
                 'appearance' => [
                     'collapseAll' => 1,

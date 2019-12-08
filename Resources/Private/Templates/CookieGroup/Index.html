@@ -3,28 +3,30 @@
 	<f:section name="content">
 		<f:if condition="{header}">
 			<f:then>
-				<code>Cookies Header</code>
 				<f:if condition="{modal}==1">
 					<f:render partial="Modal" arguments="{_all}" />
 				</f:if>
-				<f:for each="{cookieGroups}" as="cookieGroup">
-					<f:for each="{cookieGroup.cookies}" as="cookie">
-						<f:format.raw>{cookie.inhead}</f:format.raw>
+				<f:if condition="{modal}!=1">
+					<f:for each="{cookieGroups}" as="cookieGroup">
+						<f:for each="{cookieGroup.cookies}" as="cookie">
+							<f:format.raw>{cookie.inhead}</f:format.raw>
+						</f:for>
 					</f:for>
-				</f:for>
-				<f:if condition="{revoke}">
-					<f:link.action class="sit-cookieoptin-modal-revoke" action="revokeCookies" controller="Frontend" id="revoke">
-						{f:translate(key: 'cookieoptin_modal_revoke')}
-					</f:link.action>
+					<f:if condition="{revoke}">
+						<f:link.action class="sit-cookieoptin-modal-revoke" action="revokeCookies" controller="Frontend" id="revoke">
+							{f:translate(key: 'cookieoptin_modal_revoke')}
+						</f:link.action>
+					</f:if>
 				</f:if>
 			</f:then>
 			<f:else>
-				<code>Cookies Footer</code>
-				<f:for each="{cookieGroups}" as="cookieGroup">
-					<f:for each="{cookieGroup.cookies}" as="cookie">
-						<f:format.raw>{cookie.infooter}</f:format.raw>
+				<f:if condition="{modal}!=1">
+					<f:for each="{cookieGroups}" as="cookieGroup">
+						<f:for each="{cookieGroup.cookies}" as="cookie">
+							<f:format.raw>{cookie.infooter}</f:format.raw>
+						</f:for>
 					</f:for>
-				</f:for>
+				</f:if>
 			</f:else>
 		</f:if>
 	</f:section>

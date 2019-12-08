@@ -1,6 +1,6 @@
 @mixin transition($property) { transition: all $property; -webkit-transition: all $property; -moz-transition: all $property; }
-.sit-cookieoptin-modal-wrapper { position: fixed; left:0; top:0; background:rgba(0,0,0,0.9); width:100%; height:100%; z-index:99999999;
-  .cookieoptin-modal { background:#FFF;
+.sit-cookieoptin-modal-wrapper { position: fixed; left:0; top:0; background:rgba(0,0,0,0.9); width:100%; height:100%; z-index:99999999; overflow:scroll;
+  .cookieoptin-modal { background:#FFF; margin-top:2em; margin-bottom:2em;
     .cookiegroup { font-weight:bold; line-height:1em;
       .bs-checkbox { border:1px solid #000; width:1em; height:1em; float:right; cursor: pointer;
         &.checked, &.ronly { background:url("/typo3conf/ext/cookieoptin/Resources/Public/Images/check-light.svg") no-repeat center center; background-size:90%; }
