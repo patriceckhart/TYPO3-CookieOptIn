@@ -22,7 +22,7 @@
         }
     },
     "replace": {
-        "cookieoptin": "self.version",
+        "steinbauerit/cookieoptin": "self.version",
         "typo3-ter/cookieoptin": "self.version"
     }
 }
