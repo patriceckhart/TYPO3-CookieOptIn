@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-07T10:29:50Z" product-name="cookieoptin">
+		<header/>
+		<body>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup">
+				<source>Cookie Group</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.essential">
+				<source>Essential</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.cookies">
+				<source>Cookies</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie">
+				<source>Cookie</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.inhead">
+				<source>Inhead</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.infooter">
+				<source>Infooter</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.lifetime">
+				<source>Lifetime</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_modal.name">
+				<source>Modal</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_modal.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

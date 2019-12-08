@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-07T10:29:50Z" product-name="cookieoptin">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="essential.description">
+				<source>essential</source>
+			</trans-unit>
+			<trans-unit id="cookies.description">
+				<source>cookies</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

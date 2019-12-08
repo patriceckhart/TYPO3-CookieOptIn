@@ -1,0 +1,56 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="sit-cookieoptin-modal-wrapper">
+    <div class="container h-100">
+        <div class="row no-gutters h-100 align-items-center">
+            <div class="col-md-6 mx-auto cookieoptin-modal">
+                <div class="d-block p-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>{f:translate(key: 'cookieoptin_modal_header')}</h3>
+                            <p>{f:translate(key: 'cookieoptin_modal_body')}</p>
+                        </div>
+                        <div class="col-12">
+                            <f:for each="{cookieGroups}" as="cookieGroup">
+                                <div class="d-block cookiegroup">
+                                    <div class="row my-3 align-items-center">
+                                        <div class="col-8">{cookieGroup.name}</div>
+                                        <div class="col-4 text-right">
+                                            <f:if condition="{cookieGroup.essential}==1">
+                                                <f:then>
+                                                    <div class="bs-checkbox ronly">&nbsp;</div>
+                                                </f:then>
+                                                <f:else>
+                                                    <div class="bs-checkbox" data-cookiegroupid="{cookieGroup.uid}">&nbsp;</div>
+                                                </f:else>
+                                            </f:if>
+                                        </div>
+                                    </div>
+                                    <f:for each="{cookieGroup.cookies}" as="cookie">
+                                        <div class="row no-gutters cookie">
+                                            <div class="col-2">{cookie.name}</div>
+                                            <div class="col-8">{cookie.description}</div>
+                                            <div class="col-2 text-right">{cookie.lifetime}</div>
+                                        </div>
+                                    </f:for>
+                                </div>
+                            </f:for>
+                        </div>
+                        <div class="col-md-4">
+                            <f:form action="setSelectedCookies" controller="Frontend">
+                                <f:form.hidden name="cookieGroupArray" id="cookieGroupArray" value="" />
+                                <button type="submit" class="btn btn-secondary btn-block mt-3" id="saveCookieSettings">{f:translate(key: 'cookieoptin_modal_save')}</button>
+                            </f:form>
+                        </div>
+                        <div class="col-md-4">
+                            <f:link.action class="btn btn-secondary btn-block mt-3" action="setEssentialCookies" controller="Frontend" id="allowEssential">{f:translate(key: 'cookieoptin_modal_setEssential')}</f:link.action>
+                        </div>
+                        <div class="col-md-4">
+                            <f:link.action class="btn btn-primary btn-block mt-3" action="setAllCookies" controller="Frontend" id="allowAll">{f:translate(key: 'cookieoptin_modal_setAll')}</f:link.action>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-07T10:29:50Z" product-name="cookieoptin">
+		<header/>
+		<body>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup">
+				<source>Cookie Group</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.essential">
+				<source>Essential</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.cookies">
+				<source>Cookies</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie">
+				<source>Cookie</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.inhead">
+				<source>Inhead</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.infooter">
+				<source>Infooter</source>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.lifetime">
+				<source>Lifetime</source>
+			</trans-unit>
+
+			<trans-unit id="cookieoptin_modal_header">
+				<source>We use cookies</source>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_body">
+				<source>We use cookies on our website. Some of them are essential while others help us improve this website and your experience.</source>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_save">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_setEssential">
+				<source>Essential only</source>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_setAll">
+				<source>Allow all</source>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_revoke">
+				<source>Cookie-Settings</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

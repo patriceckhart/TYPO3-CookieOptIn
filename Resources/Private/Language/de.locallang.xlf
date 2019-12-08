@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-12-04T09:39:37Z" product-name="cookieoptin">
+		<header/>
+		<body>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup">
+				<target>Cookie Gruppe</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.name">
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.essential">
+				<target>Essenziell</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookiegroup.cookies">
+				<target>Cookies</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie">
+				<target>Cookie</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.name">
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.inhead">
+				<target>Code im Header</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.infooter">
+				<target>Code im Footer</target>
+			</trans-unit>
+			<trans-unit id="tx_cookieoptin_domain_model_cookie.lifetime">
+				<target>Lebenszeit</target>
+			</trans-unit>
+
+			<trans-unit id="cookieoptin_modal_header">
+				<target>Wir verwenden Cookies</target>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_body">
+				<target>Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.</target>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_save">
+				<target>Speichern</target>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_setEssential">
+				<target>Nur Essenzielle</target>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_setAll">
+				<target>Alle erlauben</target>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_revoke">
+				<target>Cookie-Einstellungen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
