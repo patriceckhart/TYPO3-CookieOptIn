@@ -6,6 +6,8 @@
         &.checked, &.ronly { background:url("/typo3conf/ext/cookieoptin/Resources/Public/Images/check-light.svg") no-repeat center center; background-size:90%; }
         &.ronly { opacity:0.5; }
       }
+      .cookies { display:none; }
+      .cookiegroup-toggle { display:block; cursor: pointer; }
       .cookie { font-weight:normal; font-size:0.8em; border-bottom:1px solid #ebebeb; line-height:1.4em; padding-top:0.25em; padding-bottom:0.25em; }
     }
   }

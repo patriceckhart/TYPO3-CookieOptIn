@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    console.log('cookieoptin');
+    // console.log('cookieoptin');
 
     cookieGroupArray = [];
 
@@ -15,6 +15,10 @@ $(document).ready(function(){
             }
             $('#cookieGroupArray').val(cookieGroupArray);
         }
+    });
+    $('.cookiegroup-toggle').click(function(){
+        $('.cookiegroup-toggle').parent().parent().parent().find('.cookies').slideUp();
+        $(this).parent().parent().parent().find('.cookies').slideToggle();
     });
 
 });

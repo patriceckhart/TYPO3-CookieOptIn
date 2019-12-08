@@ -13,7 +13,9 @@
                             <f:for each="{cookieGroups}" as="cookieGroup">
                                 <div class="d-block cookiegroup">
                                     <div class="row my-3 align-items-center">
-                                        <div class="col-8">{cookieGroup.name}</div>
+                                        <div class="col-8">
+                                            <div class="cookiegroup-toggle">{cookieGroup.name}</div>
+                                        </div>
                                         <div class="col-4 text-right">
                                             <f:if condition="{cookieGroup.essential}==1">
                                                 <f:then>
@@ -25,13 +27,17 @@
                                             </f:if>
                                         </div>
                                     </div>
-                                    <f:for each="{cookieGroup.cookies}" as="cookie">
-                                        <div class="row no-gutters cookie">
-                                            <div class="col-2">{cookie.name}</div>
-                                            <div class="col-8">{cookie.description}</div>
-                                            <div class="col-2 text-right">{cookie.lifetime}</div>
-                                        </div>
-                                    </f:for>
+                                    <div class="cookies">
+                                        <f:for each="{cookieGroup.cookies}" as="cookie">
+                                            <div class="cookie">
+                                                <div class="row no-gutters">
+                                                    <div class="col-2">{cookie.name}</div>
+                                                    <div class="col-8">{cookie.description}</div>
+                                                    <div class="col-2 text-right">{cookie.lifetime}</div>
+                                                </div>
+                                            </div>
+                                        </f:for>
+                                    </div>
                                 </div>
                             </f:for>
                         </div>
