@@ -9,22 +9,19 @@ plugin.tx_cookieoptin_modal {
     }
     persistence {
         storagePid = {$plugin.tx_cookieoptin_modal.persistence.storagePid}
-        #recursive = 1
         revoke = {$plugin.tx_cookieoptin_modal.persistence.revoke}
+        impressPid = {$plugin.tx_cookieoptin_modal.persistence.impressPid}
+        dataPrivacyPid = {$plugin.tx_cookieoptin_modal.persistence.dataPrivacyPid}
         excludedPages = {$plugin.tx_cookieoptin_modal.persistence.excludedPages}
     }
     features {
-        #skipDefaultArguments = 1
-        # if set to 1, the enable fields are ignored in BE context
         ignoreAllEnableFieldsInBe = 0
-        # Should be on by default, but can be disabled if all action in the plugin are uncached
         requireCHashArgumentForActionArguments = 1
-    }
-    mvc {
-        #callDefaultActionIfActionCantBeResolved = 1
     }
     settings {
         revoke = {$plugin.tx_cookieoptin_modal.persistence.revoke}
+        impressPid = {$plugin.tx_cookieoptin_modal.persistence.impressPid}
+        dataPrivacyPid = {$plugin.tx_cookieoptin_modal.persistence.dataPrivacyPid}
         excludedPages = {$plugin.tx_cookieoptin_modal.persistence.excludedPages}
     }
 }
@@ -43,11 +40,9 @@ page {
     includeJSFooter {
         cookieoptin-js = EXT:cookieoptin/Resources/Public/JavaScript/main.js
     }
-
     includeCSS {
         cookie-scss = EXT:cookieoptin/Resources/Public/Styles/main.scss
     }
-
     9 < lib.cookieoptinModal
     9 {
         settings {
@@ -60,5 +55,4 @@ page {
             header = 0
         }
     }
-
 }

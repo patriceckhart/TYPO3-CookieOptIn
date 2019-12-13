@@ -97,6 +97,16 @@ class CookieGroupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
             }
         }
 
+        $impressPid = $this->settings['impressPid'];
+        if(isset($impressPid)) {
+            $this->view->assign('impressPid', intval($impressPid));
+        }
+
+        $dataPrivacyPid = $this->settings['dataPrivacyPid'];
+        if(isset($dataPrivacyPid)) {
+            $this->view->assign('dataPrivacyPid', intval($dataPrivacyPid));
+        }
+
         $essentials = 0;
         foreach ($cookieGroups as $cookieGroup) {
             $essential = $cookieGroup->getEssential();
@@ -106,7 +116,6 @@ class CookieGroupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
         }
         // \TYPO3\CMS\Core\Utility\DebugUtility::debug($essentials);
         $this->view->assign('essentials', $essentials);
-
 
     }
 

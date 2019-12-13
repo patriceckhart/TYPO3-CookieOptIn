@@ -55,6 +55,22 @@
                         <div class="col-md-4">
                             <f:link.action class="btn btn-primary btn-block mt-3" action="setAllCookies" controller="Frontend" id="allowAll">{f:translate(key: 'cookieoptin_modal_setAll')}</f:link.action>
                         </div>
+                        <f:if condition="{impressPid} || {dataPrivacyPid}">
+                            <div class="col-md-12 mt-3 text-right links">
+                                <ul>
+                                    <f:if condition="{impressPid}">
+                                        <li>
+                                            <f:link.page pageUid="{impressPid}" target="_blank">{f:translate(key: 'cookieoptin_modal_impress')}</f:link.page>
+                                        </li>
+                                    </f:if>
+                                    <f:if condition="{dataPrivacyPid}">
+                                        <li>
+                                            <f:link.page pageUid="{dataPrivacyPid}" target="_blank">{f:translate(key: 'cookieoptin_modal_dataPrivacy')}</f:link.page>
+                                        </li>
+                                    </f:if>
+                                </ul>
+                            </div>
+                        </f:if>
                     </div>
                 </div>
             </div>

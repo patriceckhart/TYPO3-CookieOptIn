@@ -55,6 +55,13 @@
 			<trans-unit id="cookieoptin_modal_revoke">
 				<source>Cookie-Settings</source>
 			</trans-unit>
+
+			<trans-unit id="cookieoptin_modal_impress">
+				<source>Impress</source>
+			</trans-unit>
+			<trans-unit id="cookieoptin_modal_dataPrivacy">
+				<source>Data privacy</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

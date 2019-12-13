@@ -1,5 +1,5 @@
 @mixin transition($property) { transition: all $property; -webkit-transition: all $property; -moz-transition: all $property; }
-.sit-cookieoptin-modal-wrapper { position: fixed; left:0; top:0; background:rgba(0,0,0,0.9); width:100%; height:100%; z-index:99999999; overflow:scroll;
+.sit-cookieoptin-modal-wrapper { position: fixed; left:0; top:0; background:rgba(0,0,0,0.9); width:100%; height:100%; z-index:99999999; overflow:scroll; overflow-x:hidden !important;
   .cookieoptin-modal { background:#FFF; margin-top:2em; margin-bottom:2em;
     .cookiegroup { font-weight:bold; line-height:1em;
       .bs-checkbox { border:1px solid #000; width:1em; height:1em; float:right; cursor: pointer;
@@ -8,7 +8,17 @@
       }
       .cookies { display:none; }
       .cookiegroup-toggle { display:block; cursor: pointer; }
-      .cookie { font-weight:normal; font-size:0.8em; border-bottom:1px solid #ebebeb; line-height:1.4em; padding-top:0.25em; padding-bottom:0.25em; }
+      .cookie { font-weight:normal; font-size:0.8em; border-bottom:1px solid #ebebeb; line-height:1.4em; padding-top:0.25em; padding-bottom:0.25em;
+        .col-2 { word-break: break-word; }
+      }
+    }
+    .links {
+      ul,li { margin:0; padding:0; display:block; }
+      ul {
+        li { display:inline-block; margin-left:0.5em;
+          a { font-size:0.9em; }
+        }
+      }
     }
   }
   .btn { cursor: pointer; }
@@ -17,4 +27,9 @@
   background:#ebebeb; padding:0.5em; font-size:0.7em;
   border-radius: 4px 4px 0 0; cursor: pointer; @include transition(0.2s);
   &:hover { background: #cccccc; padding-bottom:1em; text-decoration: none; }
+}
+@media (max-width: 992px) {
+  .sit-cookieoptin-modal-wrapper { position: absolute;
+    .align-items-center { align-items: start !important; }
+  }
 }
