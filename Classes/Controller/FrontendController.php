@@ -33,7 +33,7 @@ class FrontendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             $cookieValue = 'essential';
         }
         setcookie($cookieName, $cookieValue, time() + (86400 * 30), "/");
-        $this->redirectToUri('/');
+        $this->redirectToUri($_SERVER['HTTP_REFERER']);
     }
 
     /**
@@ -46,7 +46,7 @@ class FrontendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $cookieName = 'SitCookieOptIn';
         $cookieValue = 'essential';
         setcookie($cookieName, $cookieValue, time() + (86400 * 30), "/");
-        $this->redirectToUri('/');
+        $this->redirectToUri($_SERVER['HTTP_REFERER']);
     }
 
     /**
@@ -59,7 +59,7 @@ class FrontendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $cookieName = 'SitCookieOptIn';
         $cookieValue = 'all';
         setcookie($cookieName, $cookieValue, time() + (86400 * 30), "/");
-        $this->redirectToUri('/');
+        $this->redirectToUri($_SERVER['HTTP_REFERER']);
     }
 
     /**
@@ -72,7 +72,7 @@ class FrontendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $cookieName = 'SitCookieOptIn';
         $cookieValue = 'revoked';
         setcookie($cookieName, $cookieValue, time() + (86400 * 30), "/");
-        $this->redirectToUri('/');
+        $this->redirectToUri($_SERVER['HTTP_REFERER']);
     }
 
 }
