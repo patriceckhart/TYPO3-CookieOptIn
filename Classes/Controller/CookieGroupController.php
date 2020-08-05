@@ -21,7 +21,7 @@ class CookieGroupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
      * cookieGroupRepository
      *
      * @var \SteinbauerIT\Cookieoptin\Domain\Repository\CookieGroupRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $cookieGroupRepository = null;
 

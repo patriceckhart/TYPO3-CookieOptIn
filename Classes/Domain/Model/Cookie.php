@@ -21,7 +21,7 @@ class Cookie extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * name
      *
      * @var string
-     * @validate NotEmpty
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $name = '';
 
@@ -50,7 +50,7 @@ class Cookie extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * lifetime
      *
      * @var string
-     * @validate NotEmpty
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $lifetime = '';
 
